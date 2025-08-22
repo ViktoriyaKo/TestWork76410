@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.wrapper}>
         {user?.email ? <span>Logged as {user?.email}</span> : null}
-        <div>
+        <div className={styles.caption}>
           Powered by{' '}
           <Link href={'https://portfolio-avsievich.vercel.app/'} target="_blank">
             Avsievich Viktoriia{' - '}

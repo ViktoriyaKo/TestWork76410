@@ -10,6 +10,10 @@
   }
 }
 
+.caption {
+  flex: 1;
+}
+
 .wrapper {
   @extend %container;
   @include flex(flex-align, space-between);

@@ -1,0 +1,14 @@
+.container {
+  @extend %container;
+  padding-bottom: 100px;
+}
+
+.wrapper {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.title {
+  padding-block: 80px 40px;
+}

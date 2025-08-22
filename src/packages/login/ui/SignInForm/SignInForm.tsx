@@ -42,7 +42,7 @@ const SignInForm = () => {
         {fields.map((field) => {
           return <Input key={field.name} {...field} />;
         })}
-        <Button type="submit" isLoading={isLoading}>
+        <Button fullWidth={true} type="submit" isLoading={isLoading}>
           Sign in
         </Button>
       </form>
