@@ -12,9 +12,21 @@
 
 .caption {
   flex: 1;
+  text-align: start;
 }
 
 .wrapper {
   @extend %container;
-  @include flex(flex-align, space-between);
+  @include flex(flex-start, space-between, column);
+  gap: $padding-xs;
+}
+
+@media (width >= 768px) {
+  .wrapper {
+    flex-direction: row;
+  }
+
+  .caption {
+    text-align: end;
+  }
 }

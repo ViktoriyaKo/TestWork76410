@@ -9,7 +9,8 @@
   border-width: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
@@ -56,7 +57,7 @@ select {
 }
 
 button,
-[role="button"] {
+[role='button'] {
   cursor: pointer;
 }
 
@@ -74,5 +75,11 @@ menu {
 }
 
 h2 {
-  font-size: 38px;
+  font-size: 24px;
+}
+
+@media (width >= 768px) {
+  h2 {
+    font-size: 38px;
+  }
 }

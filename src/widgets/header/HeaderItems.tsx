@@ -1,7 +1,7 @@
 import styles from './styles.module.scss';
 import Link from 'next/link';
 import { Button } from '@/shared/ui';
-import { Icon, LogoutIcon } from '@/shared/icons';
+import { Icon, LoginIcon, LogoutIcon } from '@/shared/icons';
 import Avatar from './Avatar';
 
 interface UserMenuProps {
@@ -29,7 +29,7 @@ export const UserMenu = (props: UserMenuProps) => {
 export const GuestMenu = () => (
   <div className={styles.userInfo}>
     <Link href="/login" className={styles.link}>
-      <Icon html={LogoutIcon} />
+      <Icon html={LoginIcon} />
       Login
     </Link>
   </div>

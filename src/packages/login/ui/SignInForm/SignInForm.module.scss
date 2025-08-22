@@ -1,10 +1,27 @@
 .form {
-  padding: 80px;
+  padding: 40px 20px;
   @include flex(flex-start, flex-start, column);
   gap: $padding-md;
   max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  order: 1;
 }
 
 .title {
   color: $color-primary;
+}
+
+@media (width >= 768px) {
+  .form {
+    margin: 0;
+    order: 0;
+    padding: 140px 20px;
+  }
+}
+
+@media (width >= 1168px) {
+  .form {
+    padding: 140px 80px;
+  }
 }

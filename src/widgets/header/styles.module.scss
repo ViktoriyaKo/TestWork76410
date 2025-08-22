@@ -1,4 +1,7 @@
 .header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
   background-color: $color-dark;
   color: $color-white;
   padding: $padding-sm;

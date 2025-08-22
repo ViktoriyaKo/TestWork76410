@@ -1,4 +1,4 @@
-$height: 300px;
+$height: 360px;
 
 .container {
   height: $height;
@@ -39,6 +39,7 @@ $height: 300px;
   @include flex(center, center, column);
   gap: $padding-xs;
   animation: fadeOpacity 1s linear forwards;
+  padding-inline: $padding-xs;
 }
 
 .caption {

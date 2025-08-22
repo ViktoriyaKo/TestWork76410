@@ -2,7 +2,6 @@
   @include flex(flex-start, flex-start, column);
   @include transition(all, 0.6s);
   gap: $padding-md;
-  max-width: 400px;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -44,4 +43,10 @@
   font-size: 24px;
   font-weight: 400;
   color: $color-primary;
+}
+
+@media (width >= 768px) {
+  .imageWrapper {
+    min-height: 400px;
+  }
 }
