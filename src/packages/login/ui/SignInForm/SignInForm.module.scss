@@ -1,0 +1,10 @@
+.form {
+  padding: 80px;
+  @include flex(flex-start, flex-start, column);
+  gap: $padding-md;
+  max-width: 600px;
+}
+
+.title {
+  color: $color-primary;
+}

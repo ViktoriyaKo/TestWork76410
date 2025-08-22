@@ -1,0 +1,21 @@
+$color-white: white;
+$color-primary: #0099b8;
+$color-secondary: rgba(0, 153, 184, 0.6);
+$color-dark: black;
+$color-gray: rgba(49, 49, 49, 0.32);
+
+//borders
+$light-border: 1px solid $color-gray;
+
+//sizes:
+$width-container: 1400px;
+$padding-xs: 12px;
+$padding-sm: 16px;
+$padding-md: 20px;
+
+$radius-xs: 4px;
+
+%container {
+  max-width: $width-container;
+  margin: 0 auto;
+}

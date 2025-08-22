@@ -1,0 +1,16 @@
+.footer {
+  text-align: end;
+  padding: $padding-sm;
+  background-color: $color-dark;
+  color: $color-white;
+  border-top: 1px solid rgba($color-white, 0.1);
+
+  a {
+    color: $color-primary;
+  }
+}
+
+.wrapper {
+  @extend %container;
+  @include flex(flex-align, space-between);
+}
