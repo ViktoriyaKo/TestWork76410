@@ -1,20 +1,21 @@
 .container {
   @include flex(flex-start, center);
+
   background-color: $color-dark;
   height: 300px;
 }
 
 .video {
-  max-width: 400px;
-  width: 100%;
   height: 300px;
+  max-width: 400px;
   object-fit: cover;
+  width: 100%;
 }
 
 @media (width >= 768px) {
   .container {
-    padding-block: 100px;
     height: auto;
+    padding-block: 100px;
   }
 
   .video {

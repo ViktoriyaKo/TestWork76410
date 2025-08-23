@@ -1,12 +1,12 @@
 *,
 *::before,
 *::after {
-  scroll-margin-top: 80px;
+  border-width: 0;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-margin-top: 80px;
   text-decoration: none;
-  border-width: 0;
 }
 
 html,
@@ -16,13 +16,13 @@ body {
 }
 
 body {
-  position: relative;
-  min-height: 100vh;
+  color: $color-dark;
   display: flex;
   flex-direction: column;
   font-family: var(--font-inter);
-  color: $color-dark;
   font-weight: 300;
+  min-height: 100vh;
+  position: relative;
 }
 
 main {
@@ -39,16 +39,16 @@ input,
 optgroup,
 select,
 textarea {
-  margin: 0;
-  padding: 0;
+  background-color: transparent;
+  color: inherit;
   font-family: inherit;
-  font-size: 100%;
   font-feature-settings: inherit;
+  font-size: 100%;
   font-variation-settings: inherit;
   font-weight: inherit;
   line-height: inherit;
-  color: inherit;
-  background-color: transparent;
+  margin: 0;
+  padding: 0;
 }
 
 button,
@@ -62,16 +62,16 @@ button,
 }
 
 img {
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 ol,
 ul,
 menu {
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 h2 {

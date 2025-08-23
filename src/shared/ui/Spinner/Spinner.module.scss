@@ -1,27 +1,28 @@
 .loader {
+  animation: rotation 1s linear infinite;
   border: 6px solid $color-primary;
   border-bottom-color: transparent;
   border-radius: 50%;
-  display: inline-block;
   box-sizing: border-box;
-  animation: rotation 1s linear infinite;
+  display: inline-block;
 }
 
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
 
 .bg {
-  width: 80px;
   height: 80px;
+  width: 80px;
 }
 
 .sm {
-  width: 28px;
   height: 28px;
+  width: 28px;
 }

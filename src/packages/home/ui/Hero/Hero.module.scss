@@ -1,16 +1,16 @@
 $height: 360px;
 
 .container {
-  height: $height;
-  top: 0;
-  position: relative;
   border-bottom: 3px solid $color-secondary;
+  height: $height;
+  position: relative;
+  top: 0;
 }
 
 .imageWrapper {
-  width: 100%;
   height: 100%;
   position: absolute;
+  width: 100%;
   z-index: -1;
 }
 
@@ -20,10 +20,6 @@ $height: 360px;
 }
 
 .background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
   background: linear-gradient(
     132deg,
     #060606 37%,
@@ -31,15 +27,20 @@ $height: 360px;
     rgb(0 38 51 / 88%) 48%,
     #000 57%
   );
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 
 .wrapper {
-  height: $height;
-  color: $color-white;
-  @include flex(center, center, column);
-  gap: $padding-xs;
   animation: fadeOpacity 1s linear forwards;
+  color: $color-white;
+  gap: $padding-xs;
+  height: $height;
   padding-inline: $padding-xs;
+
+  @include flex(center, center, column);
 }
 
 .caption {
@@ -53,21 +54,21 @@ $height: 360px;
     $color-white 50%,
     $color-secondary 110%
   );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-  text-align: center;
   font-size: 44px;
+  text-align: center;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes fadeOpacity {
   0% {
-    opacity: 0;
     filter: blur(10px);
+    opacity: 0;
   }
+
   100% {
-    opacity: 1;
     filter: blur(0);
+    opacity: 1;
   }
 }

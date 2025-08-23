@@ -1,12 +1,14 @@
 .button {
   @include flex(center);
-  gap: $padding-xs;
+
   background-color: $color-dark;
-  color: $color-white;
-  height: 44px;
   border-radius: $radius-xs;
+  color: $color-white;
   font-weight: 400;
+  gap: $padding-xs;
+  height: 44px;
   padding-inline: $padding-sm;
+
   @include transition(background-color);
 
   &:hover {

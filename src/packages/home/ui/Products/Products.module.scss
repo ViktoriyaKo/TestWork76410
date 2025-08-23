@@ -1,6 +1,7 @@
 .container {
   @extend %container;
-  padding: 0 20px 100px 20px;
+
+  padding: 0 20px 100px;
 }
 
 .wrapper {
@@ -15,13 +16,14 @@
 
 .message {
   font-size: 20px;
-  text-align: center;
   padding-block: 40px;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .loading {
   min-height: 300px;
+
   @include flex(center, center);
 }
 
@@ -31,6 +33,6 @@
   }
 
   .container {
-    padding: 0 40px 100px 40px;
+    padding: 0 40px 100px;
   }
 }

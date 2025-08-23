@@ -1,9 +1,9 @@
 
 @mixin flex($align: center, $justify: center, $direction: row)  {
-  display: flex;
   align-items: $align;
-  justify-content: $justify;
+  display: flex;
   flex-direction: $direction;
+  justify-content: $justify;
 }
 
 @mixin transition($params: all, $transition: 0.3s) {
