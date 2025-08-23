@@ -14,6 +14,7 @@ const useInitApp = () => {
         const user = await getUserInfo();
         setUser(user);
         setAuthorized(true);
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
       } catch (err) {
         setAuthorized(false);
         setUser(null);

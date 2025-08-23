@@ -7,7 +7,7 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
-    "lint:css": "stylelint \"**/*.{css,scss}\" --fix"
+    "lint:css": "stylelint '**/*.{css,scss}'"
   },
   "dependencies": {
     "axios": "^1.11.0",
@@ -30,7 +30,8 @@
     "eslint-config-next": "15.5.0",
     "prettier": "^3.6.2",
     "stylelint": "^16.23.1",
-    "stylelint-config-standard": "^39.0.0",
+    "stylelint-order": "^7.0.0",
+    "stylelint-scss": "^6.12.1",
     "typescript": "^5"
   }
 }

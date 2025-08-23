@@ -14,6 +14,7 @@ interface IProps extends InputHTMLAttributes<HTMLInputElement> {
 
 // eslint-disable-next-line react/display-name
 const Input = forwardRef((props: IProps, ref: LegacyRef<HTMLInputElement>) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { label, error, defaultValue, ...rest } = props;
   return (
     <div className={styles.wrapper}>
