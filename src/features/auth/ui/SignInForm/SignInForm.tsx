@@ -7,19 +7,18 @@ import { useRouter } from 'next/navigation';
 import { ERROR_MESSAGES } from '@/shared/constants';
 import { login } from '@/features/auth/api/login';
 import { TypeUserPayload, useAuthStore } from '@/features/auth';
-import { UserType } from '@/entities/user';
 
 const fields = [
   {
-    label: 'Your login',
+    label: 'Username',
     type: 'text',
-    placeholder: 'Enter your login',
+    placeholder: 'Enter your username',
     name: 'username',
     required: true,
     minLength: 3,
   },
   {
-    label: 'Your password',
+    label: 'Password',
     type: 'password',
     placeholder: 'Enter your password',
     name: 'password',

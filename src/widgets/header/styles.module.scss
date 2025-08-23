@@ -49,3 +49,13 @@
     @include transition(background-color);
   }
 }
+
+.textButton {
+  display: none;
+}
+
+@media (width >= 768px) {
+  .textButton {
+    display: block;
+  }
+}

@@ -20,7 +20,7 @@ export const UserMenu = (props: UserMenuProps) => {
       </div>
       <Button onClick={onLogout}>
         <Icon html={LogoutIcon} />
-        Logout
+        <span className={styles.textButton}>Logout</span>
       </Button>
     </div>
   );
