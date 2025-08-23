@@ -1,20 +1,19 @@
 'use client';
 import styles from './styles.module.scss';
-import { useUserStore } from '@/entities/user';
 import HeaderItems from '@/widgets/header/HeaderItems';
+import { useAuthStore } from '@/features/auth/store/use-auth-store';
 
 const Header = () => {
-  const { user, setUser } = useUserStore();
-
-  const handleLogout = () => {
-    setUser(null);
-  };
+  const { isAuthorized, user, logout } = useAuthStore();
 
   return (
     <header className={styles.header}>
       <div className={styles.wrapper}>
-        {user ? (
-          <HeaderItems.UserMenu userName={user?.email} onLogout={handleLogout} />
+        {isAuthorized === null ? null : isAuthorized && user ? (
+          <HeaderItems.UserMenu
+            userName={`${user?.firstName ?? ''} ${user?.lastName ?? ''}`}
+            onLogout={logout}
+          />
         ) : (
           <HeaderItems.GuestMenu />
         )}

@@ -22,13 +22,13 @@
 }
 
 .input:focus {
-  outline: 2px solid $color-secondary;
+  outline: 2px solid $color-primary;
 }
 
 .error {
   color: red;
   font-size: 12px;
   position: absolute;
-  bottom: -14px;
+  bottom: -16px;
   left: 0;
 }

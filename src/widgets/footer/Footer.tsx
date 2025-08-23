@@ -1,10 +1,10 @@
 'use client';
 import styles from './Footer.module.scss';
 import Link from 'next/link';
-import { useUserStore } from '@/entities/user';
+import { useAuthStore } from '@/features/auth';
 
 const Footer = () => {
-  const { user } = useUserStore();
+  const { user } = useAuthStore();
 
   return (
     <footer className={styles.footer}>

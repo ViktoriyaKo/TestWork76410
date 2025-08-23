@@ -1,5 +1,6 @@
-import { BackgroundVideo, SignInForm } from './ui';
+import { BackgroundVideo } from './ui';
 import styles from './LoginPage.module.scss';
+import { SignInForm } from '@/features/auth';
 
 const LoginPage = async () => {
   return (

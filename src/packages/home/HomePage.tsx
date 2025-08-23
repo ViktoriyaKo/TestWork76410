@@ -1,6 +1,10 @@
+'use client';
 import { Hero, Products } from '@/packages/home/ui';
+import { useInitApp } from '@/packages/home/hooks';
 
-const HomePage = async () => {
+const HomePage = () => {
+  useInitApp();
+
   return (
     <>
       <Hero />

@@ -13,6 +13,18 @@
   padding-block: 40px;
 }
 
+.message {
+  font-size: 20px;
+  text-align: center;
+  padding-block: 40px;
+  text-transform: uppercase;
+}
+
+.loading {
+  min-height: 300px;
+  @include flex(center, center);
+}
+
 @media (width >= 768px) {
   .title {
     padding-block: 80px 40px;

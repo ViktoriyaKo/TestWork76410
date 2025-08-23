@@ -2,9 +2,12 @@ import Image from 'next/image';
 import styles from './ProductCard.module.scss';
 import { ProductType } from '@/entities/product/types/types';
 import { Button } from '@/shared/ui';
+import { formatCurrency } from '@/shared/utils';
 
-const ProductCard = (props: ProductType) => {
-  const { title, category, price, image } = props;
+type ProductCard = ProductType & { showButton: boolean | null; image: string };
+
+const ProductCard = (props: ProductCard) => {
+  const { title, category, price, image, showButton } = props;
 
   return (
     <div className={styles.card}>
@@ -13,15 +16,15 @@ const ProductCard = (props: ProductType) => {
           src={image ?? ''}
           alt={title ?? ''}
           sizes="(max-width: 768px) 70vw, 30vw"
-          quality={50}
+          quality={100}
           fill
         />
       </div>
       <header className={styles.content}>
         <p className={styles.title}>{title}</p>
-        <p className={styles.caption}>{category}</p>
-        <p className={styles.price}>{price}</p>
-        <Button fullWidth={true}>Add to Cart</Button>
+        {category && <p className={styles.caption}>{category}</p>}
+        {price && <p className={styles.price}>{formatCurrency(price)}</p>}
+        {showButton && <Button fullWidth={true}>Add to Cart</Button>}
       </header>
     </div>
   );
