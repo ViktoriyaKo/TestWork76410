@@ -8,6 +8,18 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 export const metadata: Metadata = {
   title: 'AbeloHost shop',
   description: 'AbeloHost shop — your online store with a wide selection',
+  openGraph: {
+    title: 'AbeloHost shop',
+    description: 'AbeloHost shop — your online store with a wide selection',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'AbeloHost shop',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

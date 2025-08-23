@@ -65,7 +65,7 @@ const SignInForm = () => {
   return (
     <FormProvider {...methods}>
       <form onSubmit={methods.handleSubmit(onSubmit)} className={styles.form}>
-        <h2 className={styles.title}>Welcome back!</h2>
+        <h1 className={styles.title}>Welcome back!</h1>
 
         {fields.map((field) => {
           const { required, minLength, ...props } = field;
